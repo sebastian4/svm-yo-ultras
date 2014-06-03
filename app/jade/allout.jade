@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        title= pageTitle
+        link(rel='stylesheet', href='../styles/main.less.css')
+    body
+        h2 Jade - node template engine
+        div.shape
+            p ore insum lorem ipsum
+        div#ellip1 ellipsing
+        div
+            p.gtarget this is a test paragraph with green level =
+                span undefined
+            button#g-darker g-darker
+            button#g-lighter g-lighter
+        script(type='text/javascript' src='../bower_components/jquery/jquery.js')
+        script(type='text/javascript' src='../bower_components/jquery-ui/ui/jquery.ui.core.js')
+        script(type='text/javascript' src='../bower_components/jquery-ui/ui/jquery.ui.widget.js')
+        script(type='text/javascript' src='../scripts/add-ellipsis.coffee.js')
+        script(type='text/javascript' src='../scripts/jui-green5.coffee.js')
+        script(type='text/javascript' src='../scripts/twenty.coffee.js')
+        script(type='text/javascript' src='../scripts/twentyone.coffee.js')

@@ -1,0 +1,13 @@
+node_modules
+dist
+.tmp
+.sass-cache
+.DS_Store$
+app/bower_components
+test/bower_components
+*.coffee.js
+*.js.map
+*.scss.css
+*.scssc
+*.less.css
+*.jade.html

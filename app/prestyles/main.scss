@@ -1,0 +1,16 @@
+$blue: #3bbfce;
+$margin: 6px;
+$border: 5px;
+
+@mixin blueborder {
+  border-width: $border;
+  border-style: solid;
+  border-color: darken($blue, 40%);
+}
+
+.border {
+  @include blueborder;
+  padding: $margin / 2;
+  margin: $margin / 2;
+  background-color: $blue;
+}

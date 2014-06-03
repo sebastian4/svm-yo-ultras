@@ -1,0 +1,12 @@
+{
+  "name": "svm-yo-ultras",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "jquery-ui": "~1.10.4",
+    "leaflet": "~0.7.2",
+    "requirejs": "~2.1.11",
+    "momentjs": "~2.6.0"
+  },
+  "devDependencies": {}
+}
