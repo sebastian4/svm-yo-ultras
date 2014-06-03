@@ -15,7 +15,7 @@ awardMedals = (first, second, others...) ->
 
 contenders = [
   "Michael Phelps"
-  "Jose Linux"
+  "Linux Thorvalds"
   "Yao Ming"
   "Allyson Felix"
   "Shawn Johnson"
