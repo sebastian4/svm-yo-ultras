@@ -40,6 +40,10 @@ module.exports = function (grunt) {
                     files: ['<%= yeoman.app %>/prestyles/*.less'],
                     tasks: ['less']
             },
+            stylus: {
+                    files: ['<%= yeoman.app %>/prestyles/*.styl'],
+                    tasks: ['stylus']
+            },
             jade: {
                     files: ['<%= yeoman.app %>/jade/*.jade'],
                     tasks: ['jade']
@@ -332,6 +336,14 @@ module.exports = function (grunt) {
             }]
           }
         },
+        stylus: {
+            compile: {
+                files: {
+                  //'path/to/result.css': 'path/to/source.styl', // 1:1 compile
+                  '<%= yeoman.app %>/styles/mainstylus.styl.css': ['<%= yeoman.app %>/prestyles/*.styl'] // compile and concat into single file
+                }
+            }
+        },
         jade: {
             debug: {
                 options: {
@@ -426,6 +438,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
 
     grunt.loadNpmTasks('grunt-contrib-jade');
+
+    grunt.loadNpmTasks('grunt-contrib-stylus');
 
     grunt.loadNpmTasks('grunt-contrib-requirejs');
 

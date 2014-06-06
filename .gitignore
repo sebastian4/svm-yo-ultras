@@ -10,4 +10,5 @@ test/bower_components
 *.scss.css
 *.scssc
 *.less.css
+*.styl.css
 *.jade.html

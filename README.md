@@ -9,6 +9,7 @@ technologies
 	-coffeescript
 	-sass
 	-less
+	-stylus
 	-jade
 
 what to do
@@ -21,7 +22,7 @@ how to start
 
 make sure to install all the dependencies from npm and from bower ('npm install' and 'bower install').
 
-*make sure you have these installed: node, npm, bower, grunt, yeoman, ruby, sass, less
+*make sure you have these installed: node, npm, bower, grunt, yeoman, ruby, sass, less, stylus
 
 how it works
 ------------
@@ -29,5 +30,6 @@ how it works
 	-all .coffee files in coffees folder convert to files with extension .coffee.js in the scripts folder
 	-all .jade files in jade folder convert to files with extension .jade.html in the html folder
 	-all .less or .sass files in prestyles folder convert to .less.css or .scss.css files in the styles folder
+	-all .styl files in prestyles folder convert to one main .styl.css files in the styles folder
 	-after typing grunt serve, as soon as you create or change one of those files. they should be automatically translated.
 	-at first, there might be errors, files need to be changed in other to translate
