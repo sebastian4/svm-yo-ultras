@@ -1,3 +1,4 @@
+# jquery plugin in coffescript
 do ($ = jQuery) ->
 
   $.fn.addEllipsis = (options) ->
