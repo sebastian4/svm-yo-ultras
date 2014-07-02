@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    title the other one
+    link(rel='stylesheet', href='../styles/mainstylus.styl.css')
+  body
+    .forstylus
+        h1 Planets distance to Earth
+
+    mixin planet(name, distance)
+        li #{name} for #{distance} Astronomical Units
+  
+    ol#planets
+        +planet("mercury", 0.61)
+        +planet("venus", 0.28)
+        +planet("mars", 0.52)
+        +planet("jupiter", 4.20)
+        +planet("saturn", 8.54)
+        +planet("neptune", 29.06)
+    
+    
